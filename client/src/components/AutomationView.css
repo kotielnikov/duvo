@@ -1,0 +1,64 @@
+.automation-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.automation-view--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.automation-view__placeholder {
+  color: var(--color-text-muted);
+  text-align: center;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.automation-view__prompt {
+  padding: 0.75rem 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 0.5rem;
+}
+
+.automation-view__prompt-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.automation-view__prompt p {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.automation-view__timeline {
+  flex: 1;
+}
+
+.automation-view__running {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.automation-view__spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}

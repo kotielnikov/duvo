@@ -1,0 +1,115 @@
+.evaluation {
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+  border: 1px solid var(--color-border);
+}
+
+.evaluation--loading {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.evaluation--success {
+  background: rgba(34, 197, 94, 0.06);
+  border-color: rgba(34, 197, 94, 0.25);
+}
+
+.evaluation--warning {
+  background: rgba(234, 179, 8, 0.06);
+  border-color: rgba(234, 179, 8, 0.25);
+}
+
+.evaluation--error {
+  background: rgba(239, 68, 68, 0.06);
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+.evaluation__spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  flex-shrink: 0;
+}
+
+.evaluation__loading-text {
+  font-style: italic;
+}
+
+.evaluation__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.evaluation__score {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.evaluation--success .evaluation__score { color: var(--color-success); }
+.evaluation--warning .evaluation__score { color: var(--color-warning); }
+.evaluation--error .evaluation__score { color: var(--color-error); }
+
+.evaluation__rating-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.evaluation__label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.evaluation__rating {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.evaluation__completed {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.evaluation__summary {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.evaluation__issues {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+}
+
+.evaluation__issues summary {
+  cursor: pointer;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  user-select: none;
+}
+
+.evaluation__issues ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
